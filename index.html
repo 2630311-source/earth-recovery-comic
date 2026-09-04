@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 파트너와 함께하는 지구 복구 프로젝트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .comic-panel {
+            border: 3px solid #333;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .comic-panel.panel-1 {
+            background: linear-gradient(135deg, #e0f7ff 0%, #fff 100%);
+        }
+
+        .comic-panel.panel-2 {
+            background: linear-gradient(135deg, #fff9e0 0%, #fff 100%);
+        }
+
+        .comic-panel.panel-3 {
+            background: linear-gradient(135deg, #e0ffe0 0%, #fff 100%);
+        }
+
+        .comic-panel.panel-4 {
+            background: linear-gradient(135deg, #ffe0e0 0%, #fff 100%);
+        }
+
+        .comic-panel.panel-5 {
+            background: linear-gradient(135deg, #f0e0ff 0%, #fff 100%);
+        }
+
+        .comic-panel.panel-6 {
+            background: linear-gradient(135deg, #e0ffff 0%, #fff 100%);
+        }
+
+        .comic-illustration {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            margin-bottom: 15px;
+        }
+
+        .comic-text {
+            background: white;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .speech-bubble {
+            background: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 10px;
+            position: relative;
+            font-size: 14px;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 0 solid transparent;
+            border-top: 10px solid white;
+            border-bottom: 0 solid transparent;
+        }
+
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 18px;
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 0 solid transparent;
+            border-top: 12px solid #333;
+            border-bottom: 0 solid transparent;
+            z-index: -1;
+        }
+
+        .character {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .panel-number {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: #333;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .title-box {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .action-description {
+            background: #fff;
+            border-left: 4px solid #667eea;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #ddd;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 22px;
+            }
+            .comic-illustration {
+                font-size: 60px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 AI 파트너와 함께하는 지구 복구 프로젝트</h1>
+            <p>만화로 배우는 지구 환경 보호 수행펴</p>
+        </div>
+
+        <!-- 패널 1: 문제 인식 -->
+        <div class="comic-panel panel-1">
+            <div class="panel-number">1</div>
+            <div class="title-box">🌱 지금 우리 지구는?</div>
+            <div class="comic-illustration">
+                🌍😢
+            </div>
+            <div class="speech-bubble">
+                지구가 아파요! 온난화, 플라스틱 오염, 생물 다양성 감소... 우리가 함께 해결해야 해요!
+            </div>
+            <div class="action-description">
+                💭 현재 상황: 지구와 이웃의 연관성, 아이디어와 아이의 독창성
+            </div>
+        </div>
+
+        <!-- 패널 2: AI 파트너 등장 -->
+        <div class="comic-panel panel-2">
+            <div class="panel-number">2</div>
+            <div class="title-box">🤖 AI 파트너 나타나다!</div>
+            <div class="comic-illustration">
+                🤖✨
+            </div>
+            <div class="speech-bubble">
+                안녕! 나는 AI 파트너야. 함께 지구를 구해보자!
+            </div>
+            <div class="action-description">
+                💭 구성: 선풍관계, 상하관계, 포원관계 등의 자원세 / 내용 연결 관계의 긴밀성
+            </div>
+        </div>
+
+        <!-- 패널 3: 프로젝트 시작 -->
+        <div class="comic-panel panel-3">
+            <div class="panel-number">3</div>
+            <div class="title-box">🎯 프로젝트 시작!</div>
+            <div class="comic-illustration">
+                👨‍👧‍👦🤖💪
+            </div>
+            <div class="speech-bubble">
+                우리가 해야 할 일: 주제와의 연관성, 발명품 창작 아이디의 독창성
+            </div>
+            <div class="action-description">
+                💭 표현: 요구사항의 표현 여부, 흥미로운 내용의 표현, 흥미로운 만화적 표현
+            </div>
+        </div>
+
+        <!-- 패널 4: 아이디어 모으기 -->
+        <div class="comic-panel panel-4">
+            <div class="panel-number">4</div>
+            <div class="title-box">💡 아이디어 회의</div>
+            <div class="comic-illustration">
+                🧠💭💭
+            </div>
+            <div class="speech-bubble">
+                플라스틱 줄이기, 태양광 에너지, 나무 심기... 우리의 멋진 아이디어들!
+            </div>
+            <div class="action-description">
+                💭 기술 위기: 이거 하나를 실행할 수 있을까?
+            </div>
+        </div>
+
+        <!-- 패널 5: 함께 실행하기 -->
+        <div class="comic-panel panel-5">
+            <div class="panel-number">5</div>
+            <div class="title-box">🚀 우리 함께 시작!</div>
+            <div class="comic-illustration">
+                🌱🔧♻️
+            </div>
+            <div class="speech-bubble">
+                첫 번째 미션: A4 크기로 디지털 특을 활용하여 작은 그림 후, 스캔 후 파일 원본 업로드!
+            </div>
+            <div class="action-description">
+                💭 진행 방법: 직접 아래요 만들기 위해 구체적인 실행 방안을 도와주세요!
+            </div>
+        </div>
+
+        <!-- 패널 6: 성공의 미래 -->
+        <div class="comic-panel panel-6">
+            <div class="panel-number">6</div>
+            <div class="title-box">🌟 우리가 만드는 미래</div>
+            <div class="comic-illustration">
+                🌍✨🎉
+            </div>
+            <div class="speech-bubble">
+                우리의 작은 노력이 모이면 지구가 더 아름다워져요! AI 파트너와 함께라면 가능해!
+            </div>
+            <div class="action-description">
+                💭 결과: 지구를 더 깨끗하고 살기 좋은 곳으로 만들기! Zero Waste 동문과 식물들이 다시 행복하게 살 수 있도록 나와 AI 파트너가 어떻게 힘을 합쳐 지구를 치료해 나가는지 그려주세요.
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🌱 함께라면 지구도 다시 웃을 수 있어요! 🌍</p>
+            <p>AI 파트너와 함께 시작하는 지구 복구 프로젝트</p>
+        </div>
+    </div>
+</body>
+</html>
